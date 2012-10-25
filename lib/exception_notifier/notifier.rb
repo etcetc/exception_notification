@@ -6,7 +6,7 @@ class ExceptionNotifier
     self.mailer_name = 'exception_notifier'
 
     #Append application view path to the ExceptionNotifier lookup context.
-    self.append_view_path "#{File.dirname(__FILE__)}/views"
+    self.append_view_path "#{File.dirname(__FILE__)}/views/exception_notifier"
 
     class << self
       attr_writer :default_sender_address
